@@ -1,6 +1,6 @@
 function computeSquaresAndCubes() {
     
-    var numbers = "Numbers\tSquares\tCubes";
+    var numbers = "Numbers\tSquares\t\t\tCubes";
     
     for (var i = 5; i < 16; i++) {
         numbers += "\n" + i.toString() + "\t\t\t" + (i*i).toString() + "\t\t\t\t" + (i*i*i).toString();
