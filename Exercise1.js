@@ -148,4 +148,34 @@ function alphabetic() {
     alert("" + ch);
     
 }
+
+document.getElementById("word").value;
+
+function first_vowel(answer) {
+    var answer = document.getElementById("word").value;
     
+    if (answer == null) {
+        alert("canceled.");
+        return;
+    }
+        
+    if (answer == "") {
+        alert("Nothing was input.");
+        return;
+    }
+    
+    var ch = answer.split('');
+    
+    var vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o','O','u', 'U'];
+    
+    for (var i=0;i<ch.length;i++) {
+        for (var k=0;k<vowels.length;k++) {
+            if (ch[i] == vowels[k]) {
+                alert("The leftmost vowel is: " + ch[i]);
+                return;
+            }
+        }
+    }
+    
+    alert("The word doesn't have vowels.");
+}
