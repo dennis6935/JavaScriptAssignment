@@ -3,7 +3,7 @@ function computeSquaresAndCubes() {
     var numbers = "Numbers\tSquares\tCubes";
     
     for (var i = 5; i < 16; i++) {
-        numbers += "\n" + i.toString() + "\t\t" + (i*i).toString() + "\t\t" + (i*i*i).toString();
+        numbers += "\n" + i.toString() + "\t\t\t" + (i*i).toString() + "\t\t\t\t" + (i*i*i).toString();
     }
     
     alert(numbers);
